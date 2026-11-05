@@ -1,0 +1,16 @@
+/target
+
+hoyolab.config.yaml
+*.cookie
+*.env
+*.env.*
+cookies/
+auth.json
+credentials.json
+*.db
+*.sqlite
+*.sqlite3
+
+*.log
+tmp/
+/run_tmp/

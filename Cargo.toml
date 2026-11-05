@@ -1,0 +1,22 @@
+[package]
+name = "hoyolab-mcp-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rizuki"]
+description = "High-performance, lightweight HoYoLAB & HoYoWiki MCP server written in Rust"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+md-5 = "0.10"
+rand = "0.8"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

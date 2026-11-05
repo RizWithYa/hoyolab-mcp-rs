@@ -1,0 +1,11 @@
+language: "en-us"
+gameId: 6
+
+api:
+  timeoutMs: 20000
+  minRequestIntervalMs: 100
+  concurrency: 4
+  maxQueue: 24
+
+auth:
+  cookie: "ltoken_v2=...; ltuid_v2=...; account_id_v2=...; cookie_token_v2=...;"

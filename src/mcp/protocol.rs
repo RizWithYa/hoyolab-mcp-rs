@@ -29,12 +29,14 @@ pub struct JsonRpcError {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct McpServerInfo {
     pub name: String,
     pub version: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct McpInitializeResult {
     pub protocol_version: String,
     pub capabilities: Value,
@@ -43,6 +45,7 @@ pub struct McpInitializeResult {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ToolParamProperty {
     #[serde(rename = "type")]
     pub prop_type: String,
@@ -52,6 +55,7 @@ pub struct ToolParamProperty {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ToolInputSchema {
     #[serde(rename = "type")]
     pub schema_type: String,
@@ -61,6 +65,7 @@ pub struct ToolInputSchema {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ToolDefinition {
     pub name: String,
     pub description: String,
@@ -68,11 +73,13 @@ pub struct ToolDefinition {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ToolListResult {
     pub tools: Vec<ToolDefinition>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ToolCallTextContent {
     #[serde(rename = "type")]
     pub content_type: String,
@@ -80,6 +87,7 @@ pub struct ToolCallTextContent {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ToolCallResult {
     pub content: Vec<ToolCallTextContent>,
     #[serde(skip_serializing_if = "Option::is_none")]

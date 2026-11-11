@@ -145,3 +145,10 @@ auth:
 }
 ```
 *(If `--config` is omitted, the binary automatically searches for `hoyolab.config.yaml` in its working directory).*
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

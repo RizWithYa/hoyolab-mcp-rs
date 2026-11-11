@@ -3,6 +3,7 @@ name = "hoyolab-mcp-rs"
 version = "0.1.0"
 edition = "2021"
 authors = ["Rizuki"]
+license = "MIT"
 description = "High-performance, lightweight HoYoLAB & HoYoWiki MCP server written in Rust"
 
 [dependencies]
